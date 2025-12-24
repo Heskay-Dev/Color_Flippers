@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ByteFix — Color Flipper</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="css/Color Flipper.css">
+</head>
+<body>
+  <main class="card" role="application" aria-labelledby="title">
+    <div class="head">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">B</div>
+        <div>
+          <h1 id="title">ByteFix Color Flippers</h1>
+          <p class="lead">Click the button to generate fresh random color.</p>
+        </div>
+      </div>
+
+      <div>
+        <button id="flipBtn" class="btn" aria-label="Generate random color">Flip Color</button>
+      </div>
+    </div>
+
+    <section class="display-area" aria-live="polite">
+      <div class="swatch" id="swatch">#FFFFFF</div>
+
+      <div class="meta">
+        <div class="values">
+          <div class="chip" id="hexVal">HEX: #FFFFFF</div>
+          <div class="chip" id="rgbVal">RGB: 255, 255, 255</div>
+          <div class="chip" id="hslVal">HSL: 0°, 0%, 100%</div>
+          <button class="ghost" id="copyBtn" aria-label="Copy HEX">Copy HEX</button>
+        </div>
+
+        <div class="history" id="history" aria-label="Color history"></div>
+      </div>
+    </section>
+
+    <div class="footer">
+      <div>Tip: Click a history to reapply that color.</div>
+      <div id="credit">ByteFix • Color Flippers</div>
+    </div>
+  </main>
+
+<script src="javascript/Color Flipper.js"></script>
+</body>
+</html>
